@@ -5,7 +5,7 @@ const Garage61Callback = () => {
   const [searchParams] = useSearchParams();
   const [redirectAttempted, setRedirectAttempted] = useState<boolean>(false);
 
-  const deepLink = `com.pitwall.cc://auth/garage61/callback?${searchParams.toString()}`;
+  const deepLink = `com.edshelley.pitwall://auth/garage61/callback?${searchParams.toString()}`;
 
   useEffect(() => {
     window.location.href = deepLink;
